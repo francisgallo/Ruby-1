@@ -1,11 +1,13 @@
-one_to_100 =(1..25)
+one_to_100 =(1..100
 
 one_to_100.each {|i|
-  if i%3 == 0
-     puts "Bit"
+  if i%3 == 0 and i%5 ==0
+     puts "Bitmaker"
   elsif i%5 == 0
     puts "Maker"
-  else
+  elsif i%3 == 0
+    puts "bit"
+   else
     puts i
     end
 }
